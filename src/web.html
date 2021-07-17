@@ -2,23 +2,45 @@
 <html>
 <head>
     <script src="Main.js"></script>
+    <link rel="stylesheet" href="format.css">
+    <link rel="icon" href="Images/emil.png">
+    <title>My Webpage</title>
 </head>
 <body>
 
-<h1>A Web Page</h1>
+
+<h1>My First Web Page</h1>
 <p id="demo">A Paragraph</p>
-<button type="button" onclick=changeP('demo')>Try it</button>
+<button type="button" onclick="changeP('demo')">Try it</button>
 <button type="button" onclick='alert("ALERTA ALERTA ALERTA")'>Alert</button>
 
 <form>
     <br>
     <input id="quantity" class="qty" type="text" placeholder="quantity" />
-    <br><br>
-    <button type="button" onclick=updater() >Calculate</button>
+    <button type="button" onclick="updater()" >Calculate</button>
 </form>
 <!--display total cost here-->
 <br>
-<span>The Cost is: <span id="total">totalcost</span></span>
+<span>The Cost is:
+    <span id="total"></span>
+</span>
+<br>
+
+<h2>String Reverser</h2>
+<input id="string" type="text" placeholder="Enter a string"/>
+<button type="button" onclick="reverser()">Go!</button>
+<br><br>
+<span>The reversed string is: <span id="rev"></span></span>
+<br>
+<button class="link" id="invisible_button">Example paragraph</button>
+<br>
+<span title="I am hovering over the text">This is the text I want to have a mousover</span>
+<br><br>
+<a class="groove" href="https://www.github.com/highonskooma" title="thank u :)" target="_blank" rel="noopener noreferrer">Follow me on github!</a>
+<br><br>
+<a href="https://bit.ly/3wMK7QW" target="_blank" rel="noopener noreferrer">
+    <img src="Images/emil.png" width="100" height="100" >
+</a>
 
 </body>
 </html>

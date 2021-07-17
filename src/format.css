@@ -1,0 +1,40 @@
+body {
+    background: lightyellow;
+    font: 18px Arial, sans-serif;
+    text-align: center;
+}
+/*h1 {
+    color: orange;
+}
+h1 {
+    font: normal 35px Verdana, Arial, sans-serif;
+    color: red;
+    text-align: center;
+}*/
+h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    letter-spacing: -1px;
+    word-spacing: 0.4px;
+    color: #000000;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-transform: none;
+    text-align: center;
+}
+
+button.link {
+    background:none;
+    border:none;
+}
+
+img {
+    border: 5px solid #555;
+}
+
+a.groove {
+    border-style: groove;
+    border-width: thin;
+}
