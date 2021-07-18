@@ -1,3 +1,4 @@
+const expect = require("expect");
 
 let str1 = "teststring";
 
@@ -38,4 +39,14 @@ p.addEventListener('click', function(event) {
     p.innerHTML = 'You clicked it!';
 });
 */
+function sum(a, b) {
+    return a + b;
+}
+module.exports = sum;
+
+
+let map1 = new Map([[String.prototype, [Number.prototype]]]);
+map1.set('gui', [3,6,2,1]);
+map1.set('maria', [5,3,2,1]);
+map1.set('velho', [1,2,5,4,2]);
 
