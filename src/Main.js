@@ -42,11 +42,44 @@ p.addEventListener('click', function(event) {
 function sum(a, b) {
     return a + b;
 }
-module.exports = sum;
+//module.exports = sum;
 
 
-let map1 = new Map([[String.prototype, [Number.prototype]]]);
+function sortMapValues(map) {
+    for (const [key, value] of map.entries()) {
+        value.sort();
+    }
+}
+//module.exports = sortMapValues;
+
+function arrayIsSorted(arr, n) {
+    if (n == 0 || n == 1)
+        return true;
+
+    for (let i = 1; i < n; i++)
+        if (arr[i - 1] > arr[i])
+            return false;
+
+    return true;
+}
+
+function mapIsSorted(map) {
+    for (const [key, value] of map.entries()) {
+        if (!arrayIsSorted(value, value.length)) return false;
+    }
+    return true;
+}
+
+
+module.exports = {mapIsSorted , sortMapValues , sum};
+
+/*
+var map1 = new Map();
 map1.set('gui', [3,6,2,1]);
 map1.set('maria', [5,3,2,1]);
 map1.set('velho', [1,2,5,4,2]);
-
+console.log(map1);
+sortMapValues(map1);
+console.log(map1);
+console.log("map is sorted? "+mapIsSorted(map1));
+*/
